@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TasteTrove</string>
+    <string name="email">Email</string>
+    <string name="password_format">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="logout">Keluar</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Empty">Story is Empty</string>
+    <string name="exit">Are you sure you want to Logout?</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="taste">Taste\nThe Culinary\nDelights</string>
+    <string name="indulge">Indulge in the Exquisite\nCulinary Delights</string>
+    <string name="get_started">Get Started</string>
+    <string name="name_food">Name Food</string>
+    <string name="description">Description</string>
+    <string name="highlight">Highlight</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="submit">Submit</string>
+    <string name="nama">Nama</string>
+    <string name="tastetrove">TasteTrove</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="camera">Camera</string>
+    <string name="profile">Profile</string>
+    <string name="welcome_text">WELCOME\nTo TasteTrove"</string>
+</resources>
