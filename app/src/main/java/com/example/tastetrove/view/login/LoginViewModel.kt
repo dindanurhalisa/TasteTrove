@@ -5,8 +5,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.tastetrove.data.pref.UserModel
 import com.example.tastetrove.data.repo.UserRepository
-import com.example.tastetrove.data.response.LoginResponse
 import com.example.tastetrove.data.response.Result
+import com.example.tastetrove.data.response.auth.LoginResponse
 import kotlinx.coroutines.launch
 
 class LoginViewModel(private val repository: UserRepository) : ViewModel() {

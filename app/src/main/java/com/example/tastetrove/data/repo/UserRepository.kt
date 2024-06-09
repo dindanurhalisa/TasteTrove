@@ -6,12 +6,12 @@ import androidx.lifecycle.liveData
 import com.example.tastetrove.data.pref.UserModel
 import com.example.tastetrove.data.pref.UserPreference
 import com.example.tastetrove.data.response.ErrorResponse
-import com.example.tastetrove.data.response.LoginResponse
-import com.example.tastetrove.data.response.SignupResponse
 import com.example.tastetrove.data.retrofit.ApiService
 import com.google.gson.Gson
 import kotlinx.coroutines.flow.Flow
 import com.example.tastetrove.data.response.Result
+import com.example.tastetrove.data.response.auth.LoginResponse
+import com.example.tastetrove.data.response.auth.RegisterResponse
 import retrofit2.HttpException
 
 class UserRepository private constructor(
@@ -31,7 +31,7 @@ class UserRepository private constructor(
 
     fun signup(
         name: String, email: String, pass: String
-    ): LiveData<Result<SignupResponse>> = liveData {
+    ): LiveData<Result<RegisterResponse>> = liveData {
         emit(Result.Loading)
         try {
             val response = apiService.signup(name, email, pass)

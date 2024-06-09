@@ -47,7 +47,7 @@ class SignupActivity : AppCompatActivity() {
     private fun signup(){
         with(binding){
             registerButton.setOnClickListener{
-                val name = nameEditText.text.toString()
+                val name = nameTextView.text.toString()
                 val email = emailEditText.text.toString()
                 val password = passwordEditText.text.toString()
                 viewModel.signup(name, email, password).observe(this@SignupActivity) { result ->
@@ -86,7 +86,6 @@ class SignupActivity : AppCompatActivity() {
 
     private fun setupAction(message: String) {
         binding.registerButton.setOnClickListener {
-
             AlertDialog.Builder(this).apply {
                 setTitle("Yeah!")
                 setMessage(message)

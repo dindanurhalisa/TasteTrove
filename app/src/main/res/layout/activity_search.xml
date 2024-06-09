@@ -82,11 +82,12 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
+            android:id="@+id/home"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
             android:src="@drawable/baseline_home_24_white"
-            android:contentDescription="@string/home" />
+            android:contentDescription="@string/home"/>
 
         <ImageView
             android:layout_width="0dp"

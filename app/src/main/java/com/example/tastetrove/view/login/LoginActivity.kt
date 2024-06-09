@@ -77,19 +77,13 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setupAction(message: String, token: String) {
-
         val email = binding.emailEditText.text.toString()
         viewModel.saveSession(UserModel(email, token))
-
         AlertDialog.Builder(this).apply {
-            setTitle("Login Berhasil!")
-            setMessage(message)
-            setPositiveButton("Lanjut") { _, _ ->
-                val intent = Intent(context, MainActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                startActivity(intent)
-                finish()
-            }
+            val intent = Intent(context, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+            finish()
             create()
             show()
         }

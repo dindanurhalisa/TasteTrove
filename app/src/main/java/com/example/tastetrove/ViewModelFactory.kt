@@ -27,8 +27,5 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
         @Volatile
         private var INSTANCE: ViewModelFactory? = null
         fun getInstance(context: Context) = ViewModelFactory(Injection.provideRepository(context))
-        fun clearInstance() {
-            INSTANCE = null
-        }
     }
 }
