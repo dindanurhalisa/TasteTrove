@@ -66,10 +66,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        app:layout_constraintBottom_toTopOf="@id/registerButton"/>
+        app:layout_constraintBottom_toTopOf="@id/RegisterButton"/>
 
     <Button
-        android:id="@+id/registerButton"
+        android:id="@+id/RegisterButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -91,7 +91,7 @@
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
+        app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
 
     <TextView
         android:id="@+id/messageTextView5"
