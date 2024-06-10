@@ -80,7 +80,7 @@ class LoginActivity : AppCompatActivity() {
         val email = binding.emailEditText.text.toString()
         viewModel.saveSession(UserModel(email, token))
         AlertDialog.Builder(this).apply {
-            val intent = Intent(context, MainActivity::class.java)
+            val intent = Intent(context, MainActivity()::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
             finish()
