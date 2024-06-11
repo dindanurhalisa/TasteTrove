@@ -39,7 +39,6 @@
         android:id="@+id/blueVector"
         android:layout_width="460dp"
         android:layout_height="600dp"
-        android:src="@drawable/orange_vector_down"
         app:layout_constraintBottom_toTopOf="@id/guidelineHorizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
