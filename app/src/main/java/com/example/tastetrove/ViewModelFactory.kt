@@ -3,7 +3,7 @@ package com.example.tastetrove
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.tastetrove.data.di.Injection
+import com.example.tastetrove.di.Injection
 import com.example.tastetrove.data.repo.UserRepository
 import com.example.tastetrove.view.login.LoginViewModel
 import com.example.tastetrove.view.main.MainViewModel
